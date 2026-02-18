@@ -1,0 +1,1439 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Монтаж отопления и водоснабжения в Невинномысске | Тёплые полы, котельные</title>
+
+  <meta name="description" content="Профессиональный монтаж систем отопления, водоснабжения и канализации в Невинномысске и Ставропольском крае. Тёплые полы, котельные, коллекторные системы и поставка материалов по оптовым ценам." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="canonical" href="https://your-heating-site.ru/" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Невинномысск Отопление" />
+  <meta property="og:title" content="Монтаж отопления и водоснабжения в Невинномысске | Тёплые полы, котельные" />
+  <meta property="og:description" content="Профессиональный монтаж систем отопления, водоснабжения и канализации в Невинномысске и Ставропольском крае. Тёплые полы, котельные, коллекторные системы и поставка материалов по оптовым ценам." />
+  <meta property="og:url" content="https://your-heating-site.ru/" />
+  <meta property="og:image" content="https://your-heating-site.ru/images/og.jpg" />
+
+  <link rel="icon" href="images/favlogo.png" sizes="any" />
+
+  <link rel="preload" href="fonts/Widocktrialbold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/FindSansPro-Regular.ttf" as="font" type="font/ttf" crossorigin />
+  <link rel="preload" href="images/logo-full.png" as="image" />
+  <link rel="preload" href="images/fon.png" as="image" />
+
+  <style>
+    /* ============================================================
+       FAST + MODERN: меньше тяжёлых фильтров, больше “стекла” и CTA
+       ============================================================ */
+
+    /* Fonts */
+    @font-face {
+      font-family: "Widocktrial";
+      src: url("fonts/Widocktrialbold.woff2") format("woff2"),
+           url("fonts/Widocktrialbold.otf") format("opentype");
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: "FindSansPro";
+      src: url("fonts/FindSansPro-Regular.ttf") format("truetype");
+      font-weight: 400;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    :root{
+      --bg-0:#07070a;
+      --bg-1:#0b1220;
+      --card:#101827cc;
+      --card-solid:#101827;
+      --stroke:rgba(255,255,255,.08);
+      --text:#ffffff;
+      --muted:rgba(255,255,255,.72);
+      --muted2:rgba(255,255,255,.55);
+      --blue:#2b86f0;
+      --blue2:#ff5400;
+      --green:#22c55e;
+      --shadow: 0 16px 60px rgba(0,0,0,.45);
+      --radius: 24px;
+      --radius2: 18px;
+      --max: 1200px;
+      --font-h: "Widocktrial", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      --font-b: "FindSansPro", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    }
+
+    html { scroll-behavior:smooth; }
+    * { box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family: var(--font-b);
+      color: var(--text);
+      background: radial-gradient(1200px 700px at 50% 0%, rgba(43,134,240,.18), transparent 60%),
+                  radial-gradient(900px 500px at 20% 10%, rgba(59,130,246,.16), transparent 55%),
+                  radial-gradient(900px 500px at 80% 15%, rgba(34,197,94,.08), transparent 55%),
+                  linear-gradient(180deg, var(--bg-1), var(--bg-0) 65%, #05050a);
+      overflow-x:hidden;
+    }
+
+    body::before{
+      content:"";
+      position:fixed;
+      inset:0;
+      background:
+        linear-gradient(180deg, rgba(5,5,10,.75), rgba(5,5,10,.55) 35%, rgba(5,5,10,.85)),
+        url("images/fon.png") center/cover no-repeat;
+      opacity:.65;
+      z-index:-2;
+      transform: translateZ(0);
+    }
+
+    body::after{
+      content:"";
+      position:fixed;
+      inset:0;
+      background-image: radial-gradient(rgba(255,255,255,.05) 1px, transparent 1px);
+      background-size: 18px 18px;
+      opacity:.12;
+      z-index:-1;
+      pointer-events:none;
+    }
+
+    .container{
+      width:100%;
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:50;
+      backdrop-filter: blur(10px);
+      background: rgba(7,7,10,.55);
+      border-bottom:1px solid var(--stroke);
+    }
+    .main-nav{
+      max-width: var(--max);
+      margin:0 auto;
+      padding: 12px 20px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .nav-list{
+      display:flex;
+      gap:20px;
+      list-style:none;
+      padding:0;
+      margin:0;
+      flex:1;
+      min-width: 0;
+    }
+    .nav-left{ justify-content:flex-end; }
+    .nav-right{ justify-content:flex-start; }
+    .nav-list a{
+      color: var(--muted);
+      text-decoration:none;
+      font-size: 14px;
+      padding: 10px 10px;
+      border-radius: 12px;
+      transition: background .2s ease, color .2s ease;
+      white-space:nowrap;
+    }
+    .nav-list a:hover{
+      background: rgba(43,134,240,.12);
+      color: #fff;
+    }
+    .logo{
+      text-decoration:none;
+      padding: 0 10px;
+      flex: 0 0 auto;
+    }
+    .logo img{
+      height: 44px;
+      width:auto;
+      display:block;
+    }
+
+    /* Hero */
+    .hero{ padding: 2px 0 10px; }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1.35fr .65fr;
+      gap: 26px;
+      align-items:center;
+      padding: 26px 0 8px;
+    }
+    .hero-card{
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+    }
+    .hero-card::before{
+      content:"";
+      position:absolute;
+      inset:-2px;
+      background: radial-gradient(600px 250px at 30% 10%, rgba(59,130,246,.35), transparent 55%),
+                  radial-gradient(500px 250px at 75% 0%, rgba(34,197,94,.18), transparent 60%);
+      opacity:.65;
+      z-index:0;
+    }
+    .hero-inner{
+      position:relative;
+      z-index:1;
+      padding: 28px 26px;
+    }
+
+    .hero-kicker{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      margin: 0 0 14px;
+      flex-wrap:wrap;
+    }
+    .kicker-badge{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      font-size: 12px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(59,130,246,.35);
+      background: rgba(59,130,246,.10);
+      color:#fff;
+    }
+    .kicker-text{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing: .55px;
+      font-size: 12px;
+      color: rgba(255,255,255,.75);
+    }
+
+    .hero-title{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      line-height: 1.02;
+      font-size: clamp(20px, 4vw, 52px);
+      margin: 0 0 12px;
+      max-width: 18ch;
+    }
+    .hero-em{
+      color: var(--blue2);
+      text-shadow: 0 14px 40px rgba(43,134,240,.25);
+    }
+
+    .hero-copy{
+      display:grid;
+      gap: 14px;
+      padding-top: 12px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      margin-top: 14px;
+    }
+    .hero-sub{
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: 60ch;
+    }
+    .hero-bullets{
+      display:flex;
+      gap: 10px;
+      flex-wrap:wrap;
+      margin: 0 0 22px;
+      padding: 0;
+      list-style:none;
+    }
+    .pill{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.86);
+      font-size: 13px;
+    }
+    .dot{
+      width: 8px; height: 8px; border-radius: 999px;
+      background: var(--green);
+      box-shadow: 0 0 0 3px rgba(34,197,94,.18);
+      flex:0 0 auto;
+    }
+
+    .cta-row{
+      display:flex;
+      gap: 12px;
+      flex-wrap:wrap;
+      align-items:center;
+    }
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding: 14px 18px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.10);
+      text-decoration:none;
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing:.4px;
+      font-size: 14px;
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+      will-change: transform;
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btn-primary{
+      background: linear-gradient(135deg, rgb(255 84 0), rgb(246 159 59));
+      border-color: rgb(255 119 2 / 45%);
+      color: #fff;
+      box-shadow: 0 12px 30px rgb(240 116 43 / 28%);
+    }
+    .btn-primary:hover{ transform: translateY(-1px); }
+    .btn-secondary{
+      background: rgba(255,255,255,.06);
+      color:#fff;
+    }
+    .btn-secondary:hover{
+      background: rgba(255,255,255,.10);
+      transform: translateY(-1px);
+    }
+    .btn img{
+      width:18px; height:18px;
+      object-fit:contain;
+      filter: brightness(0) invert(1);
+    }
+
+    .trust{
+      margin-top: 14px;
+      display:flex;
+      gap: 16px;
+      flex-wrap:wrap;
+      color: var(--muted2);
+      font-size: 13px;
+    }
+
+    /* Right mini card */
+    .side-card{
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      position:relative;
+      overflow:hidden;
+    }
+    .side-card h3{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      margin: 0 0 10px;
+      font-size: 18px;
+      line-height:1.15;
+    }
+    .side-card p{
+      margin:0 0 14px;
+      color: var(--muted);
+      font-size: 14px;
+      line-height:1.5;
+    }
+    .side-card .mini{ display:grid; gap:10px; }
+    .mini-row{
+      display:flex;
+      gap:10px;
+      align-items:center;
+      justify-content:space-between;
+      padding: 10px 12px;
+      border-radius: 16px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(255,255,255,.90);
+      font-size: 13px;
+    }
+    .mini-row b{ font-family: var(--font-h); font-weight:700; }
+
+    /* Section titles */
+    .section-title{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      text-align:center;
+      font-size: clamp(22px, 3.2vw, 42px);
+      line-height:1.15;
+      margin: 0 0 26px;
+    }
+    .section-title .text-blue{ color: var(--blue2); }
+
+    /* Games slider */
+    .slider-section-wrapper{
+      padding: 6px 20px 66px;
+      position:relative;
+      z-index:2;
+    }
+    .slider-section-wrapper .title{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: clamp(22px, 3.2vw, 42px);
+      margin: 0 0 22px;
+      text-align:center;
+    }
+    .slider-section-wrapper .title span{ color: var(--blue2); }
+    .slider-section-wrapper .slider-container{
+      position:relative;
+      width:100%;
+      height: 320px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      overflow:hidden;
+      margin-bottom: 22px;
+    }
+    .slider-section-wrapper .slider-item{
+      width: 290px;
+      height: 290px;
+      border-radius: 28px;
+      position:absolute;
+      opacity:0;
+      transition: transform 1.0s ease, opacity 1.0s ease;
+      box-shadow: 0 16px 60px rgba(0,0,0,.35);
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      background: var(--card-solid);
+    }
+    .slider-item img{
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      display:block;
+    }
+    .slider-section-wrapper .slider-item.center{ transform: translateX(0) scale(1); opacity:1; z-index:5; }
+    .slider-section-wrapper .slider-item.left-1{ transform: translateX(-280px) scale(.70); opacity:.75; z-index:4; }
+    .slider-section-wrapper .slider-item.right-1{ transform: translateX(280px) scale(.70); opacity:.75; z-index:4; }
+    .slider-section-wrapper .slider-item.left-2{ transform: translateX(-470px) scale(.48); opacity:.45; z-index:3; }
+    .slider-section-wrapper .slider-item.right-2{ transform: translateX(470px) scale(.48); opacity:.45; z-index:3; }
+    .slider-section-wrapper .slider-item.hidden-left{ transform: translateX(-610px) scale(.32); opacity:0; z-index:1; }
+    .slider-section-wrapper .slider-item.hidden-right{ transform: translateX(610px) scale(.32); opacity:0; z-index:1; }
+
+    .slider-buttons-container{
+      display:flex;
+      gap: 12px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    /* ===== BONUS SECTION WRAPPER (оставляем твой секшен, меняем только карточки ниже) ===== */
+    .bonus-section{
+      width:100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 10px 20px 60px;
+      position:relative;
+      z-index:2;
+    }
+
+    /* ==============================
+       ✅ NEW BONUS CARDS (красивые, как со старого)
+       ТЕКСТЫ — из твоего текущего сайта (мы не меняли слова),
+       просто даём правильную структуру/стили чтобы не налезало.
+       ============================== */
+
+    .bonus-grid{
+      display:grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 18px;
+      align-items:stretch;
+      width:100%;
+    }
+
+    .bonus-card{
+      position:relative;
+      border-radius: 22px;
+      overflow:hidden;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      box-shadow: 0 20px 60px rgba(0,0,0,.45);
+      transform-style: preserve-3d;
+      will-change: transform;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      aspect-ratio: 4 / 5; /* красиво и не вытягивает */
+    }
+
+    .bonus-card::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(520px 260px at 20% 10%, rgba(43,134,240,.22), transparent 55%),
+        radial-gradient(520px 260px at 80% 15%, rgba(59,130,246,.16), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      filter: saturate(1.05);
+      z-index:0;
+    }
+
+    .bonus-card.active::before{
+      background:
+        radial-gradient(520px 260px at 20% 10%, rgba(43,134,240,.30), transparent 55%),
+        radial-gradient(520px 260px at 80% 15%, rgba(34,197,94,.12), transparent 55%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+    }
+
+    .bonus-card::after{
+      content:"";
+      position:absolute;
+      inset:-40%;
+      background: radial-gradient(circle at var(--px,50%) var(--py,50%), rgba(255,255,255,.14), transparent 60%);
+      opacity:0;
+      transition: opacity .25s ease;
+      pointer-events:none;
+      z-index:1;
+    }
+
+    .bonus-card:hover{
+      border-color: rgba(43,134,240,.35);
+      box-shadow: 0 26px 80px rgba(43,134,240,.12), 0 20px 60px rgba(0,0,0,.50);
+    }
+    .bonus-card:hover::after{ opacity:1; }
+
+    /* картинка фона карточки (твои bluecard/blackcard) */
+    .bonus-card .card-bg{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      object-fit: cover;
+      object-position:center;
+      opacity:.22;              /* чтобы не спорила с текстом */
+      filter: saturate(1.05) contrast(1.05);
+      z-index:0;
+      pointer-events:none;
+    }
+
+    /* новый контент-лейаут вместо absolute-адка */
+    .card-content-wrapper{
+      position:relative;
+      z-index:2;
+      height:100%;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding: 18px 14px;
+      gap: 12px;
+      backdrop-filter: blur(14px);
+    }
+
+    .icon-wrapper{
+      width: 64px;
+      height: 64px;
+      border-radius: 20px;
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 18px 40px rgba(0,0,0,.35);
+      display:grid;
+      place-items:center;
+      margin: 0;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .bonus-icon{
+      width: 44px;
+      height: 44px;
+      position:absolute;
+      inset:0;
+      margin:auto;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 20px rgba(0,0,0,.35));
+      transition: transform .45s ease, opacity .35s ease;
+    }
+    .bonus-card:hover .bonus-icon{ transform: rotate(-6deg) scale(1.06); }
+
+    .text-container{
+      width:100%;
+      min-height: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    /* убираем старую absolute-логику состояний — делаем нормально */
+    .bonus-state{
+      position:static;
+      width:100%;
+      padding:0;
+      transition: opacity .25s ease;
+    }
+    .bonus-default-state{ display:none; }
+    .bonus-hover-state{ opacity:1 !important; }
+
+    .bonus-title, .bonus-subtitle, .bonus-subtitle-fs, .bonus-title-simple{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      display:block;
+      line-height:1.06;
+      letter-spacing:.04em;
+    }
+
+    .bonus-title, .bonus-title-simple{
+      font-size: 20px;
+      opacity:.96;
+    }
+
+    /* “до 360%” и “+ FS” — делаем градиент как на старом */
+    .bonus-subtitle, .bonus-subtitle-fs{
+      font-size: 30px;
+      line-height:1;
+      background: linear-gradient(90deg, rgba(59,130,246,1), rgba(34,197,94,.9));
+      -webkit-background-clip:text;
+      background-clip:text;
+      color: transparent;
+      text-shadow: 0 0 30px rgba(59,130,246,.10);
+      margin-top: 2px;
+    }
+
+    .bonus-extra{
+      font-family: var(--font-b);
+      font-size: 14px;
+      color: rgba(255,255,255,.75);
+      margin-top: 6px;
+      display:block;
+    }
+
+    /* “залоченные” (inactive) — блюрим пока не наведут */
+    .bonus-card.inactive .bonus-subtitle,
+    .bonus-card.inactive .bonus-subtitle-fs,
+    .bonus-card.inactive .bonus-extra{
+      filter: blur(10px);
+      opacity:.55;
+      transition: filter .35s ease, opacity .35s ease;
+    }
+    .bonus-card.inactive:hover .bonus-subtitle,
+    .bonus-card.inactive:hover .bonus-subtitle-fs,
+    .bonus-card.inactive:hover .bonus-extra{
+      filter: blur(0);
+      opacity:1;
+    }
+
+    .bonus-cta-wrap{
+      display:flex;
+      justify-content:center;
+      margin-top: 18px;
+    }
+    .bonus-button{
+      cursor:pointer;
+      border: none;
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing:.4px;
+      padding: 14px 22px;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(43,134,240,1), rgba(59,130,246,1));
+      color:#fff;
+      box-shadow: 0 12px 30px rgba(43,134,240,.28);
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .bonus-button:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+    .bonus-button:active{ transform: translateY(1px); }
+
+    /* Features */
+    .features-section{
+      padding: 6px 0 70px;
+      position:relative;
+      z-index:2;
+    }
+    .features-grid{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .feature-card{
+      background: var(--card);
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      padding: 18px;
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .feature-card:hover{
+      transform: translateY(-3px);
+      border-color: rgba(59,130,246,.35);
+      box-shadow: 0 18px 60px rgba(0,0,0,.35);
+    }
+    .feature-card-header{
+      display:flex;
+      align-items:center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .feature-icon-placeholder{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      background: rgba(59,130,246,.10);
+      border:1px solid rgba(59,130,246,.18);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex: 0 0 auto;
+      overflow:hidden;
+    }
+    .feature-card h3{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      margin:0;
+      font-size: 15px;
+      letter-spacing:.3px;
+    }
+    .feature-card p{
+      margin:0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height:1.6;
+    }
+
+    /* Footer */
+    .footer-section{
+      padding: 1px 0 26px;
+      background: rgba(5,5,10,.75);
+      border-top: 1px solid var(--stroke);
+      position:relative;
+      z-index:2;
+    }
+    .footer-logo{ display:inline-block; margin-bottom: 18px; }
+    .footer-responsible-text{
+      color: var(--muted);
+      font-size: 13px;
+      margin: 0 0 16px;
+    }
+    .footer-nav{
+      display:flex;
+      justify-content:center;
+      gap: 14px;
+      flex-wrap:wrap;
+      margin-bottom: 18px;
+    }
+    .footer-nav a{
+      color: rgba(255,255,255,.82);
+      text-decoration:none;
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      font-size: 12px;
+      letter-spacing:.35px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.18);
+      transition: background .2s ease, border-color .2s ease;
+    }
+    .footer-nav a:hover{
+      background: rgba(43,134,240,.12);
+      border-color: rgba(59,130,246,.25);
+    }
+    .footer-divider{
+      border:none;
+      height:1px;
+      background: rgba(255,255,255,.10);
+      margin: 18px 0;
+    }
+    .footer-seo-block{
+      font-size: 12px;
+      color: rgba(255,255,255,.62);
+      line-height: 1.7;
+      margin-bottom: 14px;
+      text-align: left;
+    }
+    .footer-copyright{
+      font-size: 13px;
+      color: rgba(255,255,255,.70);
+      margin:0;
+    }
+
+    /* Modal */
+    .modal-overlay{
+      position:fixed; inset:0;
+      background: rgba(0,0,0,.78);
+      backdrop-filter: blur(6px);
+      z-index: 10000;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      opacity:0;
+      visibility:hidden;
+      transition: opacity .35s ease, visibility .35s ease;
+      padding: 18px;
+    }
+    .modal-overlay.show{ opacity:1; visibility:visible; }
+    .modal-content{
+      width: 100%;
+      max-width: 420px;
+      background: rgba(16,24,39,.92);
+      border: 1px solid rgb(255 84 0);
+      border-radius: 26px;
+      box-shadow: 0 25px 90px rgba(0,0,0,.6);
+      padding: 26px 22px 22px;
+      position:relative;
+      transform: translateY(8px) scale(.98);
+      transition: transform .35s cubic-bezier(.2,.8,.2,1);
+    }
+    .modal-overlay.show .modal-content{ transform: translateY(0) scale(1); }
+    .close-modal{
+      position:absolute;
+      right: 14px;
+      top: 10px;
+      font-size: 30px;
+      color: rgba(255,255,255,.65);
+      cursor:pointer;
+      line-height:1;
+      transition: color .2s ease;
+      user-select:none;
+    }
+    .close-modal:hover{ color:#fff; }
+    .modal-logo{ height: 52px; width:auto; display:block; margin: 0 auto 12px; }
+    .modal-title{
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      text-align:center;
+      font-size: 22px;
+      line-height:1.15;
+      margin: 0 0 16px;
+    }
+    .modal-title span{ color: var(--blue2); font-size: 30px; }
+    .modal-btn{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      width: 100%;
+      padding: 14px 16px;
+      border-radius: 16px;
+      text-decoration:none;
+      font-family: var(--font-h);
+      text-transform: uppercase;
+      letter-spacing:.4px;
+      background: linear-gradient(135deg, rgb(255 84 0), rgb(246 173 59));
+      color:#fff;
+      box-shadow: 0 14px 40px rgba(43,134,240,.25);
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .modal-btn:hover{ transform: translateY(-1px); filter: brightness(1.05); }
+    .modal-btn:active{ transform: translateY(1px); }
+
+    /* Extra sections */
+    .content-section{ padding: 6px 0 70px; position:relative; z-index:2; }
+    .glass-card{ background: var(--card); border:1px solid var(--stroke); border-radius: var(--radius); box-shadow: var(--shadow); padding: 22px; }
+    .prose{ color: var(--muted); font-size: 15px; line-height: 1.7; }
+    .prose h3{ font-family: var(--font-h); text-transform: uppercase; letter-spacing:.35px; font-size: 16px; margin: 18px 0 10px; color:#fff; }
+    .prose p{ margin: 0 0 12px; }
+    .prose ul{ margin: 0 0 12px; padding-left: 18px; }
+    .prose li{ margin: 6px 0; }
+    .faq-list details{ border:1px solid rgba(255,255,255,.10); background: rgba(0,0,0,.18); border-radius: 16px; padding: 10px 12px; margin: 10px 0; }
+    .faq-list summary{ cursor:pointer; font-family: var(--font-h); text-transform: uppercase; letter-spacing:.35px; font-size: 13px; color: rgba(255,255,255,.92); }
+    .faq-list details p{ margin: 10px 0 0; color: rgba(255,255,255,.72); }
+    .review-list{ list-style:none; padding:0; margin:0; display:grid; gap:12px; }
+    .review-item{ border:1px solid rgba(255,255,255,.10); background: rgba(0,0,0,.18); border-radius: 16px; padding: 12px; }
+    .review-top{ display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; color: rgba(255,255,255,.85); font-size: 13px; }
+    .stars{ letter-spacing: 1px; white-space:nowrap; }
+    .internal-links{ margin-top: 18px; }
+    .internal-links h3{ font-family: var(--font-h); text-transform: uppercase; letter-spacing:.35px; margin:0 0 10px; font-size:14px; }
+    .internal-links ul{ list-style:none; margin:0; padding:0; display:flex; flex-wrap:wrap; gap:10px; }
+    .internal-links a{ display:inline-flex; align-items:center; justify-content:center; min-height:48px; padding:10px 14px; border-radius:14px; border:1px solid rgba(255,255,255,.10); background: rgba(0,0,0,.18); color: rgba(255,255,255,.9); text-decoration:none; font-family: var(--font-h); text-transform: uppercase; font-size:12px; letter-spacing:.35px; }
+    .internal-links a:hover{ background: rgba(43,134,240,.12); border-color: rgba(59,130,246,.25); }
+
+    /* Responsiveness */
+    @media (max-width: 992px){
+      .hero-grid{ grid-template-columns: 1fr; }
+      .nav-left, .nav-right{ justify-content:center; }
+      .main-nav{ flex-wrap:wrap; }
+      .nav-list{ flex: 1 1 320px; justify-content:center; }
+      .features-grid{ grid-template-columns: repeat(2, 1fr); }
+      .bonus-grid{ grid-template-columns: repeat(2, minmax(0,1fr)); } /* планшет: 2x2 */
+    }
+
+    /* ================================
+       MOBILE FIXES (BONUS + LINKS)
+       ================================ */
+    @media (max-width: 576px){
+      /* HEADER */
+      .main-nav{
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 10px;
+        padding: 10px 12px;
+      }
+      .nav-list{
+        flex: none;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .nav-list a{
+        font-size: 12px;
+        padding: 8px 10px;
+      }
+      .logo img{ height: 40px; }
+
+      /* LAYOUT */
+      .features-grid{ grid-template-columns: 1fr; }
+      .slider-section-wrapper .slider-container{ height: 300px; }
+      .slider-section-wrapper .slider-item{ width: 260px; height: 260px; }
+      .slider-section-wrapper .slider-item.left-1{ transform: translateX(-250px) scale(.70); }
+      .slider-section-wrapper .slider-item.right-1{ transform: translateX(250px) scale(.70); }
+
+      .bonus-grid{
+        grid-template-columns: repeat(2, minmax(0,1fr)) !important;
+        gap: 12px !important;
+      }
+      .bonus-card{
+        aspect-ratio: 1 / 1.05 !important;   /* компактный квадратик */
+        border-radius: 18px !important;
+      }
+      .card-content-wrapper{
+        padding: 12px 10px !important;
+        gap: 10px !important;
+      }
+      .icon-wrapper{
+        width: 56px !important;
+        height: 56px !important;
+        border-radius: 18px !important;
+      }
+      .bonus-icon{
+        width: 38px !important;
+        height: 38px !important;
+      }
+      .bonus-title, .bonus-title-simple{
+        font-size: 16px !important;
+      }
+      .bonus-subtitle, .bonus-subtitle-fs{
+        font-size: 20px !important;
+      }
+      .bonus-extra{
+        font-size: 12px !important;
+        margin-top: 4px !important;
+      }
+
+      /* ====== ПОЛЕЗНЫЕ ССЫЛКИ: 1 СТРОКА, МАЛЕНЬКО ====== */
+      .internal-links ul{
+        display:flex !important;
+        flex-wrap: nowrap !important;
+        gap: 8px !important;
+        overflow-x: auto !important;
+        overflow-y: hidden !important;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2px !important;
+        scrollbar-width: none;
+      }
+      .internal-links ul::-webkit-scrollbar{ display:none; }
+      .internal-links li{ flex: 0 0 auto; }
+
+      .internal-links a{
+        min-height: 34px !important;
+        padding: 6px 10px !important;
+        border-radius: 12px !important;
+        font-size: 11px !important;
+        letter-spacing: 0 !important;
+        white-space: nowrap !important;
+        line-height: 1 !important;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      *{ scroll-behavior:auto !important; }
+      .slider-section-wrapper .slider-item{ transition:none !important; }
+      .bonus-card, .btn, .bonus-button, .feature-card{ transition:none !important; }
+    }
+  </style>
+
+  <!-- ✅ SEO НЕ ТРОГАЛ -->
+ 
+
+
+ 
+
+</head>
+
+<body>
+  <header class="site-header">
+    <nav class="main-nav">
+      <ul class="nav-list nav-left">
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#objects">Проекты</a></li>
+      </ul>
+
+      <a href="#top" class="logo" aria-label="VODOVED">
+        <img src="images/logo-full.png" alt="VODOVED Logo" width="220" height="44" decoding="async" />
+      </a>
+
+      <ul class="nav-list nav-right">
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-card">
+            <div class="hero-inner">
+              <div class="hero-kicker" aria-label="Бренд">
+                <span class="kicker-badge">Невинномысск</span>
+                <span class="kicker-text">Отопление</span>
+              </div>
+
+              <h1 class="hero-title">
+                Монтаж систем<br/>
+                <span class="hero-em">отопления и водоснабжения</span>
+              </h1>
+
+              <div class="hero-copy">
+                <p class="hero-sub">
+                  Профессиональные решения: <b>тёплые полы, котельные, коллекторные системы</b> для дома и бизнеса.
+                </p>
+
+                <ul class="hero-bullets" aria-label="Ключевые преимущества">
+                  <li class="pill"><span class="dot"></span> Монтаж любой сложности</li>
+                  <li class="pill"><span class="dot"></span> Быстрая доставка материалов</li>
+                  <li class="pill"><span class="dot"></span> Работаем по всему Ставропольскому краю</li>
+                </ul>
+              </div>
+
+              <div class="cta-row">
+                <a class="btn btn-primary call-btn" href="tel:+79383569158">
+                  <img src="images/call.png" alt="" />
+                  Позвонить
+                </a>
+                <a class="btn btn-secondary" href="https://vk.com/nevinka_sn">
+                  <img src="images/tgw.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                  Наша группа VK
+                </a>
+              </div>
+
+              <div class="trust" aria-label="Доверие">
+                <span>🔒 Гарантия качества</span>
+                <span>⚡ Быстрый монтаж</span>
+                <span>🎁 Бесплатная консультация</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="side-card" aria-label="Быстрый старт">
+            <h3>Наши шаги</h3>
+            <p>Простой процесс заказа:</p>
+            <div class="mini">
+              <div class="mini-row"><span>1) Оставьте заявку</span><b>Онлайн</b></div>
+              <div class="mini-row"><span>2) Согласуем проект</span><b>Бесплатно</b></div>
+              <div class="mini-row"><span>3) Монтаж и сдача</span><b>Гарантия</b></div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="objects" class="slider-section-wrapper">
+      <h2 class="title">Наши <span>РАБОТЫ</span></h2>
+
+      <div class="slider-container" aria-label="Слайдер работ">
+        <div class="slider-item"><img src="images/otoplenie.jpg" alt="Монтаж отопления" loading="lazy" decoding="async"></div>
+        <div class="slider-item"><img src="images/teplypol.jpg" alt="Тёплый пол" loading="lazy" decoding="async"></div>
+        <div class="slider-item"><img src="images/kotel.jpg" alt="Котельная" loading="lazy" decoding="async"></div>
+        <div class="slider-item"><img src="images/vodosnab.jpg" alt="Водоснабжение" loading="lazy" decoding="async"></div>
+        <div class="slider-item"><img src="images/kanaliz.jpg" alt="Канализация" loading="lazy" decoding="async"></div>
+        <div class="slider-item"><img src="images/kollektor.jpg" alt="Коллекторная система" loading="lazy" decoding="async"></div>
+      </div>
+
+      <div class="slider-buttons-container">
+        <a class="btn btn-primary call-btn" href="tel:+79383569158">
+          <img src="images/call.png" alt="" />
+          Позвонить
+        </a>
+        <a href="https://vk.com/nevinka_sn" class="btn btn-secondary">
+          <img src="images/tgw.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+          Наша группа VK
+        </a>
+      </div>
+    </section>
+
+    <section id="features" class="features-section">
+      <div class="container">
+        <h2 class="section-title">Почему выбирают <span class="text-blue">нас</span></h2>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-placeholder">
+                <img src="images/opit.png" alt="" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+              </div>
+              <h3>Опытный монтаж</h3>
+            </div>
+            <p>Выполняем монтаж систем отопления, водоснабжения и канализации любой сложности
+               в Невинномысске и по всему Ставропольскому краю.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-placeholder">
+                <img src="images/icon-payouts.png" alt="" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+              </div>
+              <h3>Оптовые цены на материалы</h3>
+            </div>
+            <p>Комплектуем объекты материалами напрямую от поставщиков —
+               экономия бюджета без потери качества оборудования.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-placeholder">
+                <img src="images/icon-support.png" alt="" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+              </div>
+              <h3>Проектирование под объект</h3>
+            </div>
+            <p>Подбираем решения: тёплые полы, котельные, коллекторные системы,
+               учитывая площадь, нагрузку и особенности здания.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-placeholder">
+                <img src="images/icon-security.png" alt="" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+              </div>
+              <h3>Гарантия работ</h3>
+            </div>
+            <p>Даём гарантию на монтаж и используемые материалы (3 года).
+               Поддержка и обслуживание после сдачи проекта.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-placeholder">
+                <img src="images/time.png" alt="" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+              </div>
+              <h3>Соблюдение сроков</h3>
+            </div>
+            <p>Работаем по договору и выполняем монтаж точно в оговорённые сроки
+               без задержек.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-card-header">
+              <div class="feature-icon-placeholder">
+                <img src="images/icon-bonus.png" alt="" aria-hidden="true" width="36" height="36" loading="lazy" decoding="async">
+              </div>
+              <h3>Бесплатная консультация</h3>
+            </div>
+            <p>Поможем подобрать систему отопления или водоснабжения,
+               а также прочие материалы/оборудование ещё до начала работ.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="telegram" class="content-section">
+      <div class="container">
+        <h2 class="section-title">Наша <span class="text-blue">группа ВКонтакте</span></h2>
+        <div class="glass-card">
+          <div class="prose">
+            <p>Подписывайтесь на нашу группу ВКонтакте — публикуем реальные объекты,
+               примеры монтажа отопления, тёплых полов и котельных,
+               а также акции на материалы.</p>
+            <h3>Преимущества подписки на нашу группу:</h3>
+            <ul>
+              <li>Не потеряете нас в будущем</li>
+              <li>Можно задать вопрос, получить консультацию.</li>
+              <li>Есть больше реальных фото и видео с объектов, которыми мы занимаемся</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-secondary" href="https://vk.com/nevinka_sn">
+                <img src="images/tgw.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                Перейти в VK
+              </a>
+            </div>
+
+            <div class="internal-links">
+              <h3>Часто ищут:</h3>
+              <ul>
+                <li><a href="#">Монтаж отопления Невинномысск</a></li>
+                <li><a href="#">Тёплый пол под ключ</a></li>
+                <li><a href="#">Водоснабжение</a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="vhod" class="content-section">
+      <div class="container">
+        <h2 class="section-title">Официальный <span class="text-blue">договор и гарантия</span></h2>
+        <div class="glass-card">
+          <div class="prose">
+            <p>Выполняем монтаж систем отопления, водоснабжения и канализации
+               в Невинномысске и по всему Ставропольскому краю
+               с оформлением договора и гарантийных обязательств.</p>
+            <h3>Что вы получаете:</h3>
+            <ul>
+              <li>Прозрачную смету без скрытых расходов</li>
+              <li>Соблюдение строительных норм и технологий монтажа</li>
+              <li>Гарантию на выполненные работы</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary call-btn" href="tel:+79383569158">
+                <img src="images/call.png" alt="" />
+                Позвонить
+              </a>
+              <a class="btn btn-secondary" href="https://vk.com/nevinka_sn">
+                <img src="images/tgw.png" alt="" aria-hidden="true" loading="lazy" decoding="async" />
+                Группа VK
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="registraciya" class="content-section">
+      <div class="container">
+        <h2 class="section-title">Быстрая <span class="text-blue">заявка на расчёт</span></h2>
+        <div class="glass-card">
+          <div class="prose">
+            <p>Позвоните нам или напишите в ВК — рассчитаем стоимость монтажа отопления,
+               водоснабжения или канализации для вашего объекта в Невинномысске
+               и Ставропольском крае.</p>
+            <h3>Что входит в консультацию</h3>
+            <ul>
+              <li>Подбор системы отопления или тёплого пола</li>
+              <li>Расчёт материалов и стоимости</li>
+              <li>Рекомендации по оборудованию</li>
+            </ul>
+            <div class="cta-row">
+              <a class="btn btn-primary call-btn" href="tel:+79383569158">
+                <img src="images/call.png" alt="" />
+                Позвонить
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="content-section">
+      <div class="container">
+        <h2 class="section-title">FAQ — Вопросы и <span class="text-blue">ответы</span></h2>
+        <div class="glass-card">
+          <div class="prose faq-list">
+            <details open><summary>Какие услуги вы предоставляете?</summary><p>Монтаж систем отопления, водоснабжения, канализации любой сложности; теплые полы, котельные; комплектация и поставка материалов по оптовым ценам.</details>
+            <details><summary>Сколько стоит монтаж отопления в Невинномысске?</summary><p>Цена зависит от площади, оборудования и сложности проекта. Рассчитываем индивидуально после консультации.</p></details>
+            <details><summary>Делаете ли вы тёплый пол под ключ?</summary><p>Да, выполняем монтаж водяных тёплых полов с проектированием и подбором материалов.</p></details>
+            <details><summary>Работаете ли по Ставропольскому краю?</summary><p>Да, выезжаем на объекты по всему региону.</p></details>
+            <details><summary>Можно заказать материалы отдельно?</summary><p>Да, поставляем оборудование и материалы по оптовым ценам.</p></details>
+            <details><summary>Сколько занимает вся работа?</summary><p>Все индивидуально, зависит от объёма работ и вашего объекта. Позвоните нам или напишите, всё подскажем.</p></details>
+          </div>
+
+          <div class="internal-links">
+            <h3>Популярные запросы:</h3>
+            <ul>
+              <li><a href="#">Наш ВК</a></li>
+              <li><a href="#">Позвонить</a></li>
+              <li><a href="#">Невинномысск</a></li>
+              <li><a href="#">Ставрополь</a></li>
+              <li><a href="#">Монтаж отопления</a></li>
+              <li><a href="#">Водоснабжение</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="otzyvy" class="content-section">
+      <div class="container">
+        <h2 class="section-title">Отзывы <span class="text-blue">ЗАКАЗЧИКОВ</span></h2>
+        <div class="glass-card">
+          <ul class="review-list">
+            <li class="review-item">
+              <div class="review-top"><span><b>Георгий</b> · 12.02.2026</span><span class="stars">★★★★★</span></div>
+              <div class="prose"><p>Лучшие мастера, работу знают на все 100! Рекомендую.</p></div>
+            </li>
+            <li class="review-item">
+              <div class="review-top"><span><b>Любовь</b> · 29.12.2025</span><span class="stars">★★★★☆</span></div>
+              <div class="prose"><p>Обращались к Андрею за помощью по монтажу отопления в частный дом. Цена вышла вполне приемлема, даже лучше, чем ожидали изначально. Работы выполнены в срок, рекомендую! Особенно обрадовало, что предоставляют гарантию на 3 года.</p></div>
+            </li>
+            <li class="review-item">
+              <div class="review-top"><span><b>Илья</b> · 03.12.2025</span><span class="stars">★★★★★</span></div>
+              <div class="prose"><p>Все супер, все понравилось! Буду обращаться и советвоать другим.</p></div>
+            </li>
+          </ul>
+
+          <div class="internal-links">
+            <h3>Полезные ссылки</h3>
+            <ul>
+              <li><a href="#">Наш ВК</a></li>
+              <li><a href="#">Позвонить</a></li>
+              <li><a href="#">Невинномысск</a></li>
+              <li><a href="#">Ставрополь</a></li>
+              <li><a href="#">Монтаж отопления</a></li>
+              <li><a href="#">Водоснабжение</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="about" class="footer-section">
+    <div class="container" style="text-align:center;">
+      <a href="https://vk.com/nevinka_sn" class="footer-logo">
+        <img src="images/logo.png" alt="VODOVED Logo" style="height:40px;width:auto;" loading="lazy" decoding="async">
+      </a>
+
+      <nav class="footer-nav" aria-label="Навигация футера">
+        <a href="#">Монтаж</a>
+        <a href="#">Отопление</a>
+        <a href="#">Водоснабжение</a>
+        <a href="#">Теплый пол</a>
+        <a href="#">Канализация</a>
+        <a href="#">Котельная</a>
+      </nav>
+
+      <hr class="footer-divider"/>
+
+      <div class="footer-seo-block">
+        <strong>Популярные запросы:</strong> монтаж отопления Невинномысск, установка отопления под ключ, монтаж системы отопления Ставропольский край, тёплый пол Невинномысск цена, водяной тёплый пол монтаж, монтаж котельной частный дом, установка котельного оборудования, котельная под ключ Ставрополье, монтаж водоснабжения в частном доме, прокладка водопровода Невинномысск, коллекторная система отопления установка, коллекторная разводка водоснабжения, монтаж канализации частный дом, наружная и внутренняя канализация монтаж, инженерные системы под ключ, комплектация объектов материалами, поставка материалов для отопления оптом, трубы и оборудование отопления купить, отопление для дома монтаж, отопление коттеджа проект и установка, монтаж инженерных коммуникаций, отопление водоснабжение канализация услуги, сантехнические работы Невинномысск, мастер отопления Ставропольский край, заказать монтаж отопления цена, расчёт отопительной системы бесплатно.
+      </div>
+
+      <p class="footer-copyright">© 2026 VODOVED (Невинномысск). Все права защищены.</p>
+    </div>
+  </footer>
+
+  <div id="promoModal" class="modal-overlay" role="dialog" aria-modal="true" aria-label="Промо">
+    <div class="modal-content">
+      <span class="close-modal" aria-label="Закрыть">&times;</span>
+      <img src="images/logo-full.png" alt="VODOVED Logo" class="modal-logo" loading="lazy" decoding="async">
+      <h2 class="modal-title">Позвоните нам<br><br/><span>+7(938)356-9158</span></h2>
+      <a href="tel:+79383569158" class="modal-btn">
+        Позвонить
+      </a>
+    </div>
+  </div>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+
+    /* ===============================
+       СЛАЙДЕР
+    =============================== */
+
+    const sliderWrapper = document.querySelector(".slider-section-wrapper");
+
+    if (sliderWrapper) {
+
+      const items = sliderWrapper.querySelectorAll(".slider-item");
+
+      if (items.length) {
+
+        let currentIndex = 0;
+        const totalItems = items.length;
+
+        function updateSlider() {
+
+          items.forEach((item, index) => {
+
+            item.classList.remove(
+              "center","left-1","left-2","right-1","right-2","hidden-left","hidden-right"
+            );
+
+            const newIndex = (index - currentIndex + totalItems) % totalItems;
+
+            if (newIndex === 0) item.classList.add("center");
+            else if (newIndex === 1) item.classList.add("right-1");
+            else if (newIndex === 2) item.classList.add("right-2");
+            else if (newIndex === totalItems - 1) item.classList.add("left-1");
+            else if (newIndex === totalItems - 2) item.classList.add("left-2");
+            else if (newIndex === totalItems - 3) item.classList.add("hidden-left");
+            else item.classList.add("hidden-right");
+
+          });
+
+        }
+
+        setInterval(() => {
+          currentIndex = (currentIndex + 1) % totalItems;
+          updateSlider();
+        }, 3200);
+
+        updateSlider();
+
+      }
+
+    }
+
+    /* ===============================
+       MODAL
+    =============================== */
+
+    const modal = document.getElementById("promoModal");
+    const closeBtn = document.querySelector(".close-modal");
+
+    function openModal() {
+      if (modal) modal.classList.add("show");
+    }
+
+    function closeModal() {
+      if (modal) modal.classList.remove("show");
+    }
+
+    if (closeBtn) closeBtn.addEventListener("click", closeModal);
+
+    if (modal) {
+      modal.addEventListener("click", (e) => {
+        if (e.target === modal) closeModal();
+      });
+    }
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+
+
+    /* ===============================
+       КНОПКИ ПОЗВОНИТЬ (FIXED VERSION)
+    =============================== */
+
+    // 👉 ВСЕ кнопки должны иметь class="call-btn"
+    const callButtons = document.querySelectorAll(".call-btn");
+
+    callButtons.forEach(btn => {
+
+      btn.addEventListener("click", function(e) {
+
+        // ПК — открываем popup
+        if (window.innerWidth > 768) {
+          e.preventDefault();
+          openModal();
+        }
+
+        // мобильные — стандартный tel: работает сам
+
+      });
+
+    });
+
+  });
+  </script>
+
+</body>
+</html>
